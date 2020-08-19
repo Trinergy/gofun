@@ -1,10 +1,10 @@
-package main
+package anagram
 
 import (
 	"testing"
 )
 
-func Test_isAnagram(t *testing.T) {
+func Test_Verify(t *testing.T) {
 	type args struct {
 		x string
 		y string
@@ -21,7 +21,7 @@ func Test_isAnagram(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := IsAnagram(tt.args.x, tt.args.y); got != tt.want {
+			if got := Verify(tt.args.x, tt.args.y); got != tt.want {
 				t.Errorf("IsAnagram() = %v, want %v", got, tt.want)
 			}
 		})
