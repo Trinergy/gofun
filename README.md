@@ -1,2 +1,2 @@
-# gofun
-playing around with go again
+# gofun - anagram checker
+Basic Anagram checker
